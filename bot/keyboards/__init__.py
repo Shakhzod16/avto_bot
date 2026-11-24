@@ -1,0 +1,1 @@
+"""Klaviatura komponentlari uchun paket."""

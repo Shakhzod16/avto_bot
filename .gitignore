@@ -1,0 +1,17 @@
+.env
+env/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.db
+*.sqlite3
+logs/
+backups/
+node_modules/
+**/node_modules/
+frontend/**/dist/
+frontend/**/coverage/
+*.tsbuildinfo
+media/cars/*
+!media/cars/.gitkeep

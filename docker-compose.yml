@@ -1,0 +1,61 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: sqlite+aiosqlite:////data/app.db
+      MEDIA_DIR: /app/media
+      LOG_DIR: /app/logs
+      BACKUP_DIR: /app/backups
+      API_BIND_ADDRESS: 0.0.0.0
+      COOKIE_SECURE: "true"
+      BOT_TOKEN: ${BOT_TOKEN:?Set BOT_TOKEN in .env}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:?Set JWT_SECRET_KEY in .env}
+      WEBAPP_URL: ${WEBAPP_URL:-}
+      ADMIN_IDS: ${ADMIN_IDS:-}
+    ports:
+      - "${API_BIND_ADDRESS:-127.0.0.1}:8000:8000"
+    volumes:
+      - database-data:/data
+      - media-data:/app/media
+      - log-data:/app/logs
+      - backup-data:/app/backups
+    restart: unless-stopped
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3)"
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+
+  caddy:
+    image: caddy:2-alpine
+    profiles: ["https"]
+    environment:
+      DOMAIN: ${DOMAIN:-localhost}
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    restart: unless-stopped
+
+volumes:
+  database-data:
+  media-data:
+  log-data:
+  backup-data:
+  caddy-data:
+  caddy-config:

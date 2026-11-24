@@ -1,0 +1,136 @@
+[
+  {
+    "id": "volkswagen-teramont-pro",
+    "brand": "Volkswagen",
+    "model": "Teramont Pro",
+    "body_type": "D-SUV",
+    "engine": "2.0 TSI",
+    "power_hp": 270,
+    "emission": "Euro-6",
+    "drive": "To'liq uzatma (AWD)",
+    "transmission": "7AT",
+    "seats": 7,
+    "trims": [
+      {"name": "High", "price": 825000000},
+      {"name": "Comfort", "price": 750000000}
+    ],
+    "photo": null
+  },
+  {
+    "id": "volkswagen-teramont-x",
+    "brand": "Volkswagen",
+    "model": "Teramont X",
+    "body_type": "D-SUV",
+    "engine": "2.0 TSI",
+    "power_hp": 220,
+    "emission": "Euro-6",
+    "drive": "To'liq uzatma (AWD)",
+    "transmission": "7AT",
+    "seats": 5,
+    "trims": [
+      {"name": "High Line", "price": 662500000}
+    ],
+    "photo": null
+  },
+  {
+    "id": "volkswagen-tiguan-l-pro",
+    "brand": "Volkswagen",
+    "model": "Tiguan L Pro",
+    "body_type": "C-SUV",
+    "engine": "2.0 TSI",
+    "power_hp": 220,
+    "emission": "Euro-6",
+    "drive": "To'liq uzatma (AWD)",
+    "transmission": "7AT",
+    "seats": 5,
+    "trims": [
+      {"name": "R-Line", "price": 530000000},
+      {"name": "Comfort Line", "price": 482500000}
+    ],
+    "photo": null
+  },
+  {
+    "id": "volkswagen-passat-pro",
+    "brand": "Volkswagen",
+    "model": "Passat Pro",
+    "body_type": "D-sedan",
+    "engine": "2.0 TSI",
+    "power_hp": 220,
+    "emission": "Euro-6",
+    "drive": "Old uzatma (FWD)",
+    "transmission": "7AT",
+    "seats": 5,
+    "trims": [
+      {"name": "Flagship", "price": 525000000},
+      {"name": "Comfort Line", "price": 468750000}
+    ],
+    "photo": null
+  },
+  {
+    "id": "volkswagen-tharu-xr",
+    "brand": "Volkswagen",
+    "model": "Tharu XR",
+    "body_type": "B-SUV",
+    "engine": "1.5 TSI",
+    "power_hp": 160,
+    "emission": "Euro-6",
+    "drive": "Old uzatma (FWD)",
+    "transmission": "7AT",
+    "seats": 5,
+    "trims": [
+      {"name": "High Line", "price": 325000000},
+      {"name": "Comfort Line", "price": 296250000}
+    ],
+    "photo": null
+  },
+  {
+    "id": "volkswagen-lavida-xr",
+    "brand": "Volkswagen",
+    "model": "Lavida XR",
+    "body_type": "C-sedan",
+    "engine": "1.5 MPI",
+    "power_hp": 110,
+    "emission": "Euro-6",
+    "drive": "Old uzatma (FWD)",
+    "transmission": "7AT",
+    "seats": 5,
+    "trims": [
+      {"name": "Comfort Line", "price": null}
+    ],
+    "photo": null
+  },
+  {
+    "id": "jetta-vs7",
+    "brand": "Jetta",
+    "model": "VS7",
+    "body_type": "C-SUV",
+    "engine": "1.4 TSI",
+    "power_hp": 150,
+    "emission": "Euro-6",
+    "drive": "Old uzatma (FWD)",
+    "transmission": "6AT",
+    "seats": 5,
+    "trims": [
+      {"name": "Ultimate", "price": 310000000},
+      {"name": "Glory", "price": 292500000}
+    ],
+    "photo": null
+  },
+  {
+    "id": "jetta-vs5",
+    "brand": "Jetta",
+    "model": "VS5",
+    "body_type": "C-SUV",
+    "engine": "1.4 TSI",
+    "power_hp": 150,
+    "emission": "Euro-6",
+    "drive": "Old uzatma (FWD)",
+    "transmission": "6AT",
+    "seats": 5,
+    "trims": [
+      {"name": "Brilliant Ultimate", "price": 275000000},
+      {"name": "Enjoyment", "price": 260000000}
+    ],
+    "photo": null
+  }
+]
